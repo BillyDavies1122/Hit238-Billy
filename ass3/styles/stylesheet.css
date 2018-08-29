@@ -1,0 +1,19 @@
+body{
+  width: 500px;
+  height:500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.homePageChoice{
+
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
