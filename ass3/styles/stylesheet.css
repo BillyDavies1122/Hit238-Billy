@@ -1,19 +1,25 @@
 body{
-  width: 500px;
-  height:500px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 375px;
+  height:667px;
+  margin: 0px
 }
-
+div .container{
+  height:100%;
+  width: 100%;
+}
 div.homePageChoice{
-
+  width:100%;
+  height: auto;
 }
 
-a.button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
+div .homePageLogo{
+  width:100%;
+  height:100px;
+}
 
-    text-decoration: none;
-    color: initial;
+.homePageChoice input{
+  margin-top: 50px;
+  width:275px;
+  height:100px;
+  margin-left: 50px;
 }
