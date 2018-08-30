@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>The HTML5 Herald</title>
+  <title>Create Entry</title>
   <meta name="description" content="">
   <meta name="author" content="Billy Davies">
   <link rel="stylesheet" href="styles/stylesheet.css">
@@ -16,14 +16,25 @@
     <div class="homePageLogo">
       <img src="image/placeHolder.jpg">
     </div>
-    <div class="homePageChoice">
-      <form action="createEntry.html">
-          <input type="submit" value="Create Entry" />
-      </form>
+    <div class="addExcercise">
+      <div class='entryForm'>
+        <form action="success.html">
+            <p>Date</p>
+            <input type='date' value='' class ='inputDate'>
+            <p>Name of exercise</p>
+            <input type='text' value='Name of exercise' class='inputName'>
+            <p>How many sets</p>
+            <input type='text' value='How many sets' class='inputSets'>
+            <p>How many reps</p>
+            <input type='text' value='How many reps in a set' class='inputReps'>
+            <input type="submit" value="Add" class='button' />
+        </form>
+      </div>
+    <div class='createButtons'>
+      <a href='index.html' class='buttons'>Back Home</a>
+      <a href='success.html' class='buttons'>Add</a>
+    </div>
 
-      <form action="viewEntry.html">
-          <input type="submit" value="View Entries" />
-      </form>
     </div>
   </div>
 
