@@ -44,6 +44,8 @@ div.homePageChoice{
 div.entryForm{
   margin-left: auto;
   margin-right: auto;
+  margin-left: 20px;
+  font-size: 25px;
 }
 
 div.createButtons{
@@ -59,4 +61,10 @@ div.createButtons a{
   padding-left: 50px;
   padding-right: 50px;
   font-size: 20px;
+}
+
+/* Controls the view entries page*/
+div.table{
+  font-size: 25px;
+
 }
