@@ -2,14 +2,14 @@
 document.getElementById('addButton').addEventListener('click',
   function(event) {
     event.preventDefault();
-    var value = {
+    var entryData = {
       "date":document.getElementById('inputDate').value,
       "name":document.getElementById('inputName').value,
       "sets":document.getElementById('inputSets').value,
       "reps":document.getElementById('inputReps').value
     };
-
-  var key = keyGenerator()
+    var value = JSON.stringify(entryData);
+    var key = keyGenerator()
     console.log('test')
     sessionStorage.setItem(key, value);
   })
