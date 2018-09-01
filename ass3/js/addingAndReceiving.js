@@ -1,4 +1,7 @@
-
+//Listens for the add data button to be pressed then adds the form data
+// to a json item
+//then strinify the json and adds its to sessionStorage
+//then clears the form for more entry
 document.getElementById('addButton').addEventListener('click',
     function(event) {
       event.preventDefault();
