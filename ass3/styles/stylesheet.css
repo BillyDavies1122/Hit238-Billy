@@ -61,10 +61,18 @@ div.createButtons a{
   padding-left: 50px;
   padding-right: 50px;
   font-size: 20px;
+  background-color: #ffeeee;
+}
+
+div button{
+  width:auto;
+  margin-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 20px;
 }
 
 /* Controls the view entries page*/
-div.table{
-  font-size: 25px;
-
+div.tableDiv{
+  font-size: 22px;
 }

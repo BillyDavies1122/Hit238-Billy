@@ -16,18 +16,21 @@
     <div class="homePageLogo">
       <img src="image/placeHolder.jpg">
     </div>
-    <div class='table'>
-      <table>
+    <div class='tableDiv'>
+      <table class='tableForEntries'>
         <thead>
           <tr>
             <th colspan='2'>List of entries</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody id='tableBody'>
           <tr>
             <td>Date</td>
             <td>Name</td>
-          <tr>
+            <td>Sets</td>
+            <td>Reps</td>
+            <td>Weight</td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -38,4 +41,7 @@
   </div>
 
 </body>
+
+<script src='js/addingAndReceiving.js'></script>
+<script> listOfDb();</script>
 </html>
