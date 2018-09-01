@@ -13,6 +13,7 @@ document.getElementById('addButton').addEventListener('click',
     var key = keyGenerator()
     sessionStorage.setItem(key, value);
   })
+
 //key generator function obtained from https://gist.github.com/gordonbrander/2230317
 //created by user gordon brander
 var keyGenerator = function () {
