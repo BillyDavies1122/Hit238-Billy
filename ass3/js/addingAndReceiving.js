@@ -37,10 +37,13 @@ var keyGenerator = function () {
 function listOfDb(){
   //if storage has  0 entries
   if (sessionStorage.length == 0){
-        var table = document.getElementById('forAnError')
+        var table = document.getElementById('tableBody')
+        table.parentNode.removeChild(table)
+        var para = document.getElementById('forAnError')
         var message = document.createElement("p");
-        table.appendChild(message)
+        para.appendChild(message)
         message.innerHTML='No entries to display yet';
+
   }else{
       //Iterates through storage
       for(var i = 0; i < sessionStorage.length; i++) {

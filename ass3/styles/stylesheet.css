@@ -46,7 +46,6 @@ div.entryForm{
   margin-right: auto;
   font-size: 19px;
   text-align: center;
-
 }
 .entryForm input{
   height:35px;
@@ -55,7 +54,6 @@ div.entryForm{
 }
 .entryForm p{
   text-decoration: underline;
-
 }
 
 div.createButtons{
@@ -64,9 +62,7 @@ div.createButtons{
   flex-direction: row;
   font-size: 19px;
 }
-div homePageChoice{
 
-}
 div.createButtons a{
   width:70%;
   margin-top: 25px;
@@ -105,4 +101,7 @@ div.tableDiv{
   font-size: 25px;
   text-align: center;
   text-decoration: underline;
+}
+
+.tableHead{
 }
