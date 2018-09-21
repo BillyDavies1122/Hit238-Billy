@@ -17,9 +17,11 @@ a.buttons{
   border-color : #000000;
   border-radius: 10px;
   background-color: #ffeeee;
-
   font-size: 30px;
+  text-align: center;
+  color:black;
 }
+
 
 /*controls the main page(index.html)*/
 div.container{
@@ -47,10 +49,12 @@ div.entryForm{
   font-size: 19px;
   text-align: center;
 }
+
 .entryForm input{
   height:35px;
   text-align: center;
   box-shadow: 1px 1px 1px 1px;
+  width:45%;
 }
 .entryForm p{
   text-decoration: underline;
@@ -77,6 +81,7 @@ div.createButtons a{
   background-color: #ffeeee;
   text-align: center;
   font-size:22px;
+  color: black;
 }
 
 button.createButton{
@@ -104,4 +109,8 @@ div.tableDiv{
 }
 
 .tableHead{
+}
+
+td{
+  padding: 6px;
 }
