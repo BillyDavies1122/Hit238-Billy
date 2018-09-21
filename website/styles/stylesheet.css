@@ -30,6 +30,7 @@ div.container{
 div.homePageLogo{
   width:100%;
   height:100px;
+  text-align: center;
 }
 div.homePageChoice{
   display: flex;
