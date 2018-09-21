@@ -1,8 +1,7 @@
 body{
-  width: 375px;
-  height:667px;
-  margin: 0px;
-
+padding: 0;
+margin:0;
+background-color: #8cc449;
 }
 
 a.buttons{
@@ -27,7 +26,6 @@ a.buttons{
 div.container{
   height:100%;
   width: 100%;
-  background-color: #8cc449;
 }
 div.homePageLogo{
   width:100%;
