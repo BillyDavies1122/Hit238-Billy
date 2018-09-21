@@ -1,6 +1,9 @@
+//Creates the local storage window
+myStorage = window.localStorage;
+
 //Listens for the add data button to be pressed then adds the form data
 // to a json item
-//then strinify the json and adds its to sessionStorage
+//then strinify the json and adds its to localStorage
 //then clears the form for more entry
 document.getElementById('addButton').addEventListener('click',
     function(event) {
@@ -14,7 +17,7 @@ document.getElementById('addButton').addEventListener('click',
       };
       var value = JSON.stringify(entryData)
       var key = keyGenerator()
-      sessionStorage.setItem(key, value);
+      localStorage.setItem(key, value);
       alert('Successfully added data');
 
       var elements = document.getElementsByTagName("input");
@@ -39,7 +42,7 @@ var keyGenerator = function () {
 
 function listOfDb(){
   //if storage has  0 entries
-  if (sessionStorage.length == 0){
+  if (localStorage.length == 0){
         var table = document.getElementById('tableBody')
         table.parentNode.removeChild(table)
         var para = document.getElementById('forAnError')
@@ -49,9 +52,9 @@ function listOfDb(){
 
   }else{
       //Iterates through storage
-      for(var i = 0; i < sessionStorage.length; i++) {
-        var key = sessionStorage.key(i);
-        var value = sessionStorage.getItem(key);
+      for(var i = 0; i < localStorage.length; i++) {
+        var key = localStorage.key(i);
+        var value = localStorage.getItem(key);
         //Parses the stringied json so I can use it
         var parsedJson = JSON.parse(value)
         var table = document.getElementById('tableBody')
