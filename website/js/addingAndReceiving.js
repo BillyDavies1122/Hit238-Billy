@@ -15,20 +15,22 @@ document.getElementById('addButton').addEventListener('click',
           "reps":document.getElementById('inputReps').value,
           "weight":document.getElementById('inputWeight').value
       };
-      var value = JSON.stringify(entryData)
-      var key = keyGenerator()
-      localStorage.setItem(key, value);
-      alert('Successfully added data');
+      if (formCheck() == true){
+        //Display Error message if fields are empty
+        var para = document.getElementById('forAnError')
+        para.innerHTML='Must fill in all fields!';
+      }else{ //All fields are filled in so add it to the storage
+        var value = JSON.stringify(entryData)
+        var key = keyGenerator()
+        localStorage.setItem(key, value);
+        console.log('Successfully added data');
+        document.location = 'success.html'
+      }
 
-      var elements = document.getElementsByTagName("input");
-        for (var i=0; i < elements.length; i++) {
-         if (elements[i].type == "text") {
-           elements[i].value = "";
- }
-}
 
 
-  })
+
+ })
 
 //key generator function obtained from https://gist.github.com/gordonbrander/2230317
 //created by user gordon brander
@@ -76,5 +78,15 @@ function listOfDb(){
         var weight = row.insertCell(4)
         weight.innerHTML = parsedJson['weight']
     }
+  }
+}
+
+
+function formCheck(){
+    var elements = document.getElementsByTagName("input");
+    for (var i=0; i < elements.length; i++) {
+     if (elements[i].value == "") {
+       return true;
+     }
   }
 }
