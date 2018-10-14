@@ -135,3 +135,14 @@ td{
 }
 
 /*About Page */
+div.content{
+}
+
+div.content h1{
+  margin-left: 20%;
+}
+
+div.content p{
+  margin-left: 5%;
+  margin-right: 5%;
+}
