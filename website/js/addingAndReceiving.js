@@ -81,12 +81,15 @@ function listOfDb(){
   }
 }
 
-
+//This function checks all the inputs on the create entry page.
+//If any of them are empty it will return true
+//If not it not return anything.
 function formCheck(){
     var elements = document.getElementsByTagName("input");
     for (var i=0; i < elements.length; i++) {
      if (elements[i].value == "") {
        return true;
      }
+
   }
 }

@@ -115,14 +115,22 @@ button.createButton{
 /* Controls the view entries page*/
 div.tableDiv{
   font-size: 22px;
-  color: #1b2845;
-}
-
-.tableHead{
+  color: black;
+  background-color: #335c81;
+  border: 1px solid;
+  border-radius: 5px;
 }
 
 td{
-  padding: 6px;
+  border-right:  1px solid #000000;
+  padding: 0.75rem;
+  text-align: center;
+  padding-left:0px;
+}
+.tableDiv h1{
+  margin-top: 5%;
+  margin-left: 15%;
+  text-decoration: underline;
 }
 
 /*Success page */
